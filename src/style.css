@@ -1,0 +1,220 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;700&family=Noto+Sans+Hebrew:wght@500;600;900&family=Noto+Sans+Mono:wght@300;700;900&family=Source+Code+Pro:ital,wght@0,700;1,900&display=swap");
+
+@keyframes cursor-blink {
+  0% {
+    opacity: 0;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 18px;
+  background-color: #ffffff;
+  color: #272222;
+  font-family: "Baloo 2", cursive;
+}
+
+h1 {
+  display: flex;
+  flex-direction: column;
+}
+
+h2 {
+  text-align: center;
+  font-size: 2.4em;
+  letter-spacing: 2px;
+  font-weight: 800;
+  color: #660b26;
+}
+
+.footer-heading {
+  text-align: center;
+  color: #ffffff;
+  font-size: 2em;
+  font-weight: 200;
+  padding-top: 20px;
+}
+
+p.about-me-text {
+  text-align: center;
+  margin: 0 20px;
+  font-size: 1.5em;
+  font-weight: 400;
+}
+
+.page-links-1 {
+  padding: 20px;
+  text-decoration: none;
+  font-weight: bold;
+  color: #ffffff;
+  font-size: 1.5em;
+}
+
+nav a:hover {
+  background-color: #ffffff;
+  border: 2px solid;
+  color: #b32e55;
+}
+.page-links-1:hover {
+  font-size: 2em;
+  font-weight: 700;
+  border: 2px solid #b32e55;
+  background-color: #ffffff;
+}
+
+.links-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.page-links-2 {
+  text-decoration: none;
+  background-color: #10674c;
+  border: 3px solid black;
+  border-radius: 0.5%;
+  font-size: 1.5em;
+  transition: all 200ms ease;
+  font-weight: 200;
+  color: white;
+  padding: 8px;
+}
+
+.page-links-2:hover {
+  background-color: #b32e55;
+  border: 5px solid #10674c;
+  box-shadow: 0px 8px 8px 0px rgb(72, 74, 57);
+  padding: 15px;
+  font-weight: 600;
+}
+
+.page-links-3 {
+  display: block;
+  text-align: center;
+  padding: 30px;
+  font-size: 1.8em;
+  text-decoration: none;
+  color: #b32e55;
+  font-weight: 300;
+}
+
+.header-flex-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  min-height: 60px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  overflow: hidden;
+  background-color: #10674c;
+}
+
+.section-1-hero {
+  display: block;
+  justify-items: center;
+}
+
+.logo {
+  max-width: 30%;
+  height: auto;
+  border-radius: 50%;
+}
+
+.intro-flex-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
+}
+
+.row {
+  display: inline-block;
+  padding: 100px, 40px;
+}
+
+.typewriter {
+  display: inline-block;
+  font-size: 2em;
+  font-weight: 600;
+  letter-spacing: 5px;
+}
+
+.typewriter-text {
+  color: #b32e55;
+  font-weight: 800;
+}
+
+.typewriter-text::after {
+  content: "";
+  width: 7px;
+  height: 50px;
+  background: #660b26;
+  display: inline-block;
+  letter-spacing: 5px;
+  animation: cursor-blink 1.5s steps(2) infinite;
+}
+
+.contact-icons {
+  max-width: 40px;
+  height: auto;
+  padding: 20px;
+}
+
+p.footer-note {
+  text-align: center;
+  color: #ffffff;
+  font-size: 1em;
+}
+
+.fa-github {
+  padding: 20px;
+}
+
+.fa-linkedin {
+  padding: 20px;
+}
+
+.fa-envelope {
+  padding: 20px;
+}
+
+.contact-icon-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.skills-flex-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 0 50px;
+}
+
+.skills-badges {
+  max-width: 10%;
+  height: auto;
+  padding: 1em;
+  border: 5px solid #f79d5c;
+  border-radius: 15%;
+  box-shadow: 5px 8px 20px #f79d5c;
+}
+
+#avatar-image {
+  max-width: 35%;
+  height: auto;
+  padding: 0 40px;
+  border-radius: 50%;
+}
+
+#connect {
+  background-color: #10674c;
+}
+
+#orange-flower {
+  max-width: 10%;
+  height: auto;
+}
