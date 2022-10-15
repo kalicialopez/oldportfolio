@@ -14,6 +14,10 @@ html {
   font-family: "Baloo 2", cursive;
 }
 
+body {
+  margin: 0;
+}
+
 h1 {
   display: flex;
   flex-direction: column;
@@ -25,6 +29,20 @@ h2 {
   letter-spacing: 2px;
   font-weight: 800;
   color: #660b26;
+}
+
+.content-container {
+  max-width: 1220px;
+  padding: 5px 40px;
+  margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
 }
 
 .footer-heading {
@@ -43,9 +61,9 @@ p.about-me-text {
 }
 
 .page-links-1 {
-  padding: 20px;
+  margin: 20px;
   text-decoration: none;
-  font-weight: bold;
+  font-weight: 400px;
   color: #ffffff;
   font-size: 1.5em;
 }
@@ -55,11 +73,10 @@ nav a:hover {
   border: 2px solid;
   color: #b32e55;
 }
+
 .page-links-1:hover {
-  font-size: 2em;
-  font-weight: 700;
-  border: 2px solid #b32e55;
   background-color: #ffffff;
+  border: 2px solid #10674c;
 }
 
 .links-wrapper {
@@ -71,8 +88,8 @@ nav a:hover {
 .page-links-2 {
   text-decoration: none;
   background-color: #10674c;
-  border: 3px solid black;
-  border-radius: 0.5%;
+  border: 5px solid #10674c;
+  border-radius: 32px;
   font-size: 1.5em;
   transition: all 200ms ease;
   font-weight: 200;
@@ -84,14 +101,14 @@ nav a:hover {
   background-color: #b32e55;
   border: 5px solid #10674c;
   box-shadow: 0px 8px 8px 0px rgb(72, 74, 57);
-  padding: 15px;
-  font-weight: 600;
+  font-weight: 200;
 }
 
 .page-links-3 {
-  display: block;
+  display: flex;
+  justify-content: center;
   text-align: center;
-  padding: 30px;
+  margin: 30px;
   font-size: 1.8em;
   text-decoration: none;
   color: #b32e55;
@@ -99,11 +116,6 @@ nav a:hover {
 }
 
 .header-flex-wrapper {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  align-content: center;
   min-height: 60px;
   width: 100%;
   position: fixed;
@@ -128,6 +140,10 @@ nav a:hover {
   flex-direction: row;
   align-items: center;
   align-content: center;
+  justify-content: center;
+  background-color: #ffece4;
+  margin-top: 5px;
+  padding-top: 85px;
 }
 
 .row {
@@ -206,7 +222,6 @@ p.footer-note {
 #avatar-image {
   max-width: 35%;
   height: auto;
-  padding: 0 40px;
   border-radius: 50%;
 }
 

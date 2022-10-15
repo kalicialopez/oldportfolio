@@ -13,22 +13,24 @@
   </head>
   <body>
     <header class="header-flex-wrapper">
-      <a class="logo-link" href="index.html">
-        <img class="logo" src="images/monogram-logo.png" />
-      </a>
-      <nav class="navbar">
-        <a class="page-links-1" href="">ABOUT ME</a>
-        <a class="page-links-1" href="">PROJECTS</a>
-        <a class="page-links-1" href="">**********</a>
-        <a class="page-links-1" href="">CONTACT</a>
-      </nav>
+      <div class="content-container flex">
+        <a class="logo-link" href="index.html">
+          <img class="logo" src="images/monogram-logo.png" />
+        </a>
+        <nav class="navbar">
+          <a class="page-links-1" href="about-me.html">ABOUT ME</a>
+          <a class="page-links-1" href="projects.html">PROJECTS</a>
+          <a class="page-links-1" href="">**********</a>
+          <a class="page-links-1" href="contact.html">CONTACT</a>
+        </nav>
+      </div>
     </header>
     <section class="section-1-hero">
       <div class="intro-flex-wrapper">
         <img
           src="images/avatar-2.svg"
           id="avatar-image"
-          alt="karen lopez avatar"
+          alt="karen lopez floral avatar"
         />
         <div class="row">
           <h1>
@@ -39,19 +41,19 @@
             Software developer based in Perth Western Australia
           </h1>
           <div class="links-wrapper">
-            <a class="page-links-2" href="">VIEW MY PROJECTS</a>
+            <a class="page-links-2" href="projects.html">VIEW MY PROJECTS</a>
             <img
               id="orange-flower"
               src="images/orange flower.svg"
               alt="orange flower"
             />
-            <a class="page-links-2" href="">GET IN TOUCH</a>
+            <a class="page-links-2" href="contact.html">GET IN TOUCH</a>
           </div>
         </div>
       </div>
     </section>
     <main>
-      <section class="section-1-about-me">
+      <section class="section-1-about-me content-container">
         <h2>ABOUT ME</h2>
         <p class="about-me-text">
           If you like your filler text creamy, melty or aged, than Cheese Ipsum
@@ -83,7 +85,7 @@
           biscuits cheesy feet blue castello cheesecake fromage frais smelly
           cheese.
         </p>
-        <a class="page-links-3" href="">More about me</a>
+        <a class="page-links-3" href="about-me.html">More about me</a>
       </section>
       <section class="section-2-my-skills">
         <h2>MY SKILLS</h2>
@@ -119,7 +121,9 @@
             alt="django logo"
           />
         </div>
-        <a class="page-links-3" href="">More about my skills and experience</a>
+        <a class="page-links-3" href="about-me.html"
+          >More about my skills and experience</a
+        >
       </section>
       <section class="section-3-contact"></section>
     </main>
@@ -140,7 +144,7 @@
         ></a>
       </div>
       <br />
-      <p class="footer-note">© 2022 Karen Lopez</p>
+      <p class="footer-note content-container">© 2022 Karen Lopez</p>
     </footer>
   </body>
   <script src="src/app.js"></script>
