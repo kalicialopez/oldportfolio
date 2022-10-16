@@ -1,11 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;700&family=Noto+Sans+Hebrew:wght@500;600;900&family=Noto+Sans+Mono:wght@300;700;900&family=Source+Code+Pro:ital,wght@0,700;1,900&display=swap");
 
-@keyframes cursor-blink {
-  0% {
-    opacity: 0;
-  }
-}
-
 html {
   scroll-behavior: smooth;
   font-size: 18px;
@@ -204,18 +198,42 @@ p {
 }
 
 .typewriter-text {
+  display: inline-block;
   color: #b32e55;
   font-weight: 800;
+  overflow: hidden;
+  border-right: 3px solid #89cff0;
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: 0.2em;
+  animation: typing 1.7s steps(50, end), blink-caret 0.75s step-end infinite;
+  animation-delay: 0s 0s;
+  animation-iteration-count: 1, infinite;
+  animation-direction: normal, normal;
+  animation-fill-mode: none, none;
+  animation-play-state: running, running;
+  animation-name: typing, blink-caret;
+  font-size: 30px;
+  box-sizing: border-box;
 }
 
-.typewriter-text::after {
-  content: "";
-  width: 7px;
-  height: 50px;
-  background: #660b26;
-  display: inline-block;
-  letter-spacing: 5px;
-  animation: cursor-blink 1.5s steps(2) infinite;
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  25% {
+    border-color: #89cff0;
+  }
 }
 
 .contact-icons {
