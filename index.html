@@ -5,28 +5,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="src/style.css" />
+    <script src="src/app.js"></script>
     <script
-      src="https://kit.fontawesome.com/ff859d6ad5.js"
-      crossorigin="anonymous"
-    ></script>
+  src="https://kit.fontawesome.com/ff859d6ad5.js"
+  crossorigin="anonymous"
+></script>;
     <title>Karen Lopez</title>
   </head>
   <body>
-    <header class="header-flex-wrapper">
-      <div class="content-container flex">
-        <a class="logo-link" href="index.html">
-          <img class="logo" src="images/monogram-logo.png" />
-        </a>
-        <nav class="navbar">
-          <a class="page-links-1" href="about-me.html">ABOUT ME</a>
-          <a class="page-links-1" href="projects.html">PROJECTS</a>
-          <a class="page-links-1" href="">**********</a>
-          <a class="page-links-1" href="contact.html">CONTACT</a>
+    <header>
+        <nav>
+          <div class="logo">
+            <a class="logo-link" href="index.html">
+              <img class="logo" src="images/monogram-logo.png" />
+            </a>
+          </div>
+          <ul class="nav-links">
+            <a href="about-me.html">About Me</a>
+            <a href="projects.html">Projects</a>
+            <a href="">**********</a>
+            <a href="contact.html">Contact</a>
+          </ul>
+
+          <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+          </div>
         </nav>
       </div>
     </header>
     <section class="section-1-hero">
-      <div class="intro-flex-wrapper">
+      <div class="hero-flex-wrapper">
         <img
           src="images/avatar-2.svg"
           id="avatar-image"
@@ -40,20 +50,20 @@
             </div>
             Software developer based in Perth Western Australia
           </h1>
-          <div class="links-wrapper">
-            <a class="page-links-2" href="projects.html">VIEW MY PROJECTS</a>
+          <div class="hero-link-wrapper">
+            <a class="hero-link" href="projects.html">VIEW MY PROJECTS</a>
             <img
               id="orange-flower"
               src="images/orange-flower.svg"
               alt="orange flower"
             />
-            <a class="page-links-2" href="contact.html">GET IN TOUCH</a>
+            <a class="hero-link" href="contact.html">GET IN TOUCH</a>
           </div>
         </div>
       </div>
     </section>
     <main>
-      <section class="section-1-about-me content-container">
+      <section class="section-2-about-me content-container">
         <h2>- ABOUT ME -</h2>
         <p>
           If you like your filler text creamy, melty or aged, than Cheese Ipsum
@@ -76,9 +86,9 @@
           cheese.
           <br />
         </p>
-        <a class="page-links-3" href="about-me.html">More about me</a>
+        <a class="main-link" href="about-me.html">More about me</a>
       </section>
-      <section class="section-2-my-skills">
+      <section class="section-3-my-skills">
         <h2>- MY SKILLS -</h2>
         <div class="skills-flex-container">
           <img
@@ -112,7 +122,7 @@
             alt="django logo"
           />
         </div>
-        <a class="page-links-3" href="about-me.html"
+        <a class="main-link" href="about-me.html"
           >More about my skills and experience</a
         >
       </section>
@@ -137,5 +147,4 @@
       <p class="footer-note content-container">© 2022 Karen Lopez</p>
     </footer>
   </body>
-  <script src="src/app.js"></script>
 </html>

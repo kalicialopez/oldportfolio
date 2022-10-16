@@ -16,6 +16,16 @@ html {
 
 body {
   margin: 0;
+  padding: 0;
+}
+
+main {
+  display: block;
+  justify-content: center;
+}
+
+div {
+  box-sizing: border-box;
 }
 
 h1 {
@@ -33,6 +43,28 @@ h2 {
   padding: 20px;
 }
 
+nav {
+  background-color: #10674c;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: #ffffff;
+  padding: 10px;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+p {
+  text-align: center;
+  margin: 0 20px;
+  font-size: 1.5em;
+  font-weight: 400;
+}
+
 .contact-h1 {
   text-align: center;
   font-size: 2.4em;
@@ -41,20 +73,6 @@ h2 {
   color: #660b26;
   padding-top: 85px;
   margin-bottom: 0;
-}
-
-.content-container {
-  max-width: 1220px;
-  padding: 5px 40px;
-  margin: 0 auto;
-}
-
-.flex {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  align-content: center;
 }
 
 .footer-heading {
@@ -66,39 +84,49 @@ h2 {
   margin-bottom: 0;
 }
 
-p {
-  text-align: center;
-  margin: 0 20px;
-  font-size: 1.5em;
-  font-weight: 400;
+.nav-links {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  margin: 10px;
 }
 
-.page-links-1 {
-  margin: 20px;
+.nav-links a {
+  display: block;
+  text-transform: uppercase;
   text-decoration: none;
-  font-weight: 400px;
   color: #ffffff;
+  border-bottom: 2px solid transparent;
+  transition: 0.5s ease;
+  transform: translateX(0%);
   font-size: 1.5em;
 }
 
-nav a:hover {
-  background-color: #ffffff;
-  border: 2px solid;
-  color: #b32e55;
+.nav-links a:hover {
+  border-top: 2px solid #ffffff;
+  border-bottom: 2px solid #ffffff;
+  letter-spacing: 4px;
 }
 
-.page-links-1:hover {
-  background-color: #ffffff;
-  border: 2px solid #10674c;
+.burger {
+  display: none;
 }
 
-.links-wrapper {
+.burger div {
+  width: 25px;
+  height: 3px;
+  background: #fff;
+  margin: 5px;
+  transition: all 0.5s ease;
+}
+
+.hero-link-wrapper {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 
-.page-links-2 {
+.hero-link {
   text-decoration: none;
   background-color: #10674c;
   border: 5px solid #10674c;
@@ -111,14 +139,14 @@ nav a:hover {
   text-align: center;
 }
 
-.page-links-2:hover {
+.hero-link:hover {
   background-color: #b32e55;
   border: 5px solid #10674c;
   box-shadow: 0px 8px 8px 0px rgb(72, 74, 57);
   font-weight: 200;
 }
 
-.page-links-3 {
+.main-link {
   display: flex;
   justify-content: center;
   text-align: center;
@@ -129,22 +157,18 @@ nav a:hover {
   font-weight: 300;
 }
 
-.header-flex-wrapper {
-  min-height: 60px;
-  width: 100%;
-  align-items: center;
-  position: fixed;
-  top: 0;
-  overflow: hidden;
-  background-color: #10674c;
-}
-
 .section-1-hero {
   display: block;
   justify-items: center;
 }
 
-.section-2-my-skills {
+.section-2-about-me {
+  max-width: 100%;
+  padding: 0 60px;
+  margin: 20px;
+}
+
+.section-3-my-skills {
   background-color: #ffece4;
 }
 
@@ -152,9 +176,10 @@ nav a:hover {
   max-width: 30%;
   height: auto;
   border-radius: 50%;
+  margin: 0;
 }
 
-.intro-flex-wrapper {
+.hero-flex-wrapper {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -222,12 +247,13 @@ p.footer-note {
   flex-direction: row;
   justify-content: center;
 }
+
 .skills-flex-container {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   flex-wrap: wrap;
-  margin: 0 50px;
+  margin: 25px 50px;
 }
 
 .skills-badges {
@@ -252,6 +278,7 @@ p.footer-note {
 #orange-flower {
   max-width: 10%;
   height: auto;
+  align-self: center;
 }
 #contact-page {
   background-color: #ffece4;
@@ -313,4 +340,74 @@ form {
   padding: 10px 20px;
   font-family: "Baloo 2", cursive;
   margin-top: 20px;
+}
+
+@media only screen and (max-width: 950px) {
+  nav {
+    justify-content: space-between;
+    padding: 0 5vw;
+  }
+  .nav-links {
+    position: absolute;
+    right: 0;
+    top: 8vh;
+    min-height: 92vh;
+    background: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    margin: 0;
+    padding: 0;
+    transform: translateX(100%);
+    transition: All 0.5s ease-in;
+  }
+  .nav-links a {
+    opacity: 0;
+  }
+  .burger {
+    display: block;
+  }
+}
+@media only screen and (max-width: 900px) {
+  nav {
+    justify-content: space-between;
+    padding: 0 5vw;
+  }
+  .hero-flex-wrapper {
+    flex-direction: column;
+    padding-top: 15px;
+    text-align: center;
+  }
+}
+.nav-active {
+  transform: translateX(0);
+}
+@media only screen and (max-width: 640px) {
+  .nav-links {
+    width: 100%;
+    transition: All 0.5s ease;
+  }
+}
+.nav-active {
+  transform: translateX(0);
+}
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+.toggle .line1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+.toggle .line2 {
+  opacity: 0;
+}
+.toggle .line3 {
+  transform: rotate(45deg) translate(-5px, -6px);
 }
